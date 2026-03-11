@@ -15,8 +15,8 @@ export default function SidePanel({ title, tasks, onToggle, onAdd, inputValue, o
                     onChange={() => onToggle(index)}
                     />
                 ))}
-        </div>
-        <div className="flex gap-2">
+            </div>
+            <div className="flex gap-2">
             <Input
                 placeholder="Nueva tarea"
                 value={inputValue}
@@ -24,6 +24,7 @@ export default function SidePanel({ title, tasks, onToggle, onAdd, inputValue, o
             />
             <Button onClick={onAdd} variant="primary">+</Button>
 
+            </div>
         </div>
     )
 } 
