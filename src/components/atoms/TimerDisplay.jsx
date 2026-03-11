@@ -1,11 +1,7 @@
-export default function Input({ placeholder, value, onChange }) {
+export default function TimerDisplay({ time }) {
     return (
-        <input
-            type="text"
-            placeholder={placeholder}
-            value={value}
-            onChange={onChange}
-            className="bg-zinc-800 text-white placeholder-zinc-500 px-4 py-2 rounded-xl outline-none w-full"
-        />
+        <div className="text-white font-bold text-[12rem] leading-none tracking-tight select-none">
+            {time}
+        </div>
     )
 }
