@@ -1,12 +1,17 @@
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css';
+import MainLayout from './components/templates/MainLayout';
 
 function App() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path='/' element={<MainLayout/>}>
 
-  return (
-    <>
-      
-    </>
-  )
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
-export default App
+export default App;
