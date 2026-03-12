@@ -19,7 +19,7 @@ export default function TimerSection({ time, isRunning, onStart, onStop, onReset
             </div>
             <TimerDisplay time={time} />
             <TimerControls
-                isRunning={isTunning}
+                isRunning={isRunning} /*<-- fix: isTunning to isRunning*/
                 onStart={onStart}
                 onStop={onStop}
                 onReset={onReset}
