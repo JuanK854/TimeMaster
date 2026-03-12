@@ -1,5 +1,5 @@
 
-export default function Button({ children, onClick, type, variant }) {
+export default function Button({ children, onClick, type, variant, className }) {
     const estilos = variant === 'primary'
         ? "bg-white text-black border border-gray-300 hover:bg-gray-100"
         : "bg-zinc-800 text-white border border-zinc-700 hover:bg-zinc-700"
@@ -8,7 +8,7 @@ export default function Button({ children, onClick, type, variant }) {
         <button
             onClick={onClick}
             type={type}
-            className={`${estilos} rounded-xl px-6 py-3 font-semibold cursor-pointer`} 
+            className={`${estilos} ${className} rounded-xl font-semibold cursor-pointer`} 
         >
             {children}
         </button>
