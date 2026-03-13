@@ -43,8 +43,10 @@ export default function HabitGrid({ habits, onToggle, onAdd, inputValue, onInput
                 <Input
                     placeholder="Nuevo habito" value={inputValue} onChange={onInputChange}
                 />
-                <Button onClick={onAdd} variant="primary"> +  </Button>  
+                <Button onClick={onAdd} variant="primary" className={"flex items-center justify-center px-4.5 text-2xl"}> + </Button>  
             </div>
         </div>
     )
 }
+
+/*Fix del boton + */

@@ -11,7 +11,6 @@ export default function App() {
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<TimerPage />} />
                     <Route path="calendario" element={<CalendarPage />} />
-                    <Route path="habitos" element={<HabitTrackerPage />} />
                 </Route>
             </Routes>
         </BrowserRouter>
